@@ -21,7 +21,7 @@ void OTAHandler::setup(const char* ESP_ID, const char* ESP_PASS) {
         } else {  // U_FS
             type = "filesystem";
         }
-        if(ota.getInstance()->m_pOTAHandlerCallbacks!=nullptr)
+        if (ota.getInstance()->m_pOTAHandlerCallbacks != nullptr)
             ota.getInstance()->m_pOTAHandlerCallbacks->onStart();
         // NOTE: if updating FS this would be the place to unmount FS using FS.end()
         Serial.println("\n-->[OTA] Start updating " + type);

@@ -3,8 +3,12 @@
 // ESP8266 Firmware ino file
 // By Ravi Butani
 // Rajkot INDIA
+//
+// OTA mod: @hpsaturn
+//
 // Instructables page: https://www.instructables.com/id/WIFI-CONTROLLED-RC-PLANE/
 //***************************************************
+
 #include <ESP8266WiFi.h>
 #include <OTAHandler.h>
 #include <WiFiUdp.h>
