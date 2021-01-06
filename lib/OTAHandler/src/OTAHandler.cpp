@@ -10,7 +10,7 @@ OTAHandler::OTAHandler() {
 void OTAHandler::setup(const char* ESP_ID, const char* ESP_PASS) {
     _ESP_ID = ESP_ID;
     _ESP_PASS = ESP_PASS;
-    _baud = 1500000;
+    // _baud = 1500000;
     ArduinoOTA.setHostname(_ESP_ID);
     ArduinoOTA.setPassword(_ESP_PASS);
 
@@ -53,7 +53,9 @@ void OTAHandler::setup(const char* ESP_ID, const char* ESP_PASS) {
             ota.getInstance()->m_pOTAHandlerCallbacks->onError();
     });
     ArduinoOTA.begin();
-    Serial.println("-->[INFO] ready for OTA update.");
+    Serial.println("-->[OTA] ready for OTA update.");
+    Serial.print("-->[OTA] IP address: ");
+    Serial.println(WiFi.localIP());
 }
 
 void OTAHandler::loop() {
