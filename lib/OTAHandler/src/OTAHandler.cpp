@@ -24,7 +24,7 @@ void OTAHandler::setup(const char* ESP_ID, const char* ESP_PASS) {
         if(ota.getInstance()->m_pOTAHandlerCallbacks!=nullptr)
             ota.getInstance()->m_pOTAHandlerCallbacks->onStart();
         // NOTE: if updating FS this would be the place to unmount FS using FS.end()
-        Serial.println("Start updating " + type);
+        Serial.println("\n-->[OTA] Start updating " + type);
     });
     ArduinoOTA.onEnd([]() {
         Serial.println("\n-->[OTA] success!");
@@ -53,7 +53,7 @@ void OTAHandler::setup(const char* ESP_ID, const char* ESP_PASS) {
             ota.getInstance()->m_pOTAHandlerCallbacks->onError();
     });
     ArduinoOTA.begin();
-    Serial.println("-->[OTA] ready for OTA update.");
+    Serial.println("\n-->[OTA] ready for OTA update.");
     Serial.print("-->[OTA] IP address: ");
     Serial.println(WiFi.localIP());
 }

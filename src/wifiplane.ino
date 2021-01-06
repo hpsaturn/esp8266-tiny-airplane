@@ -23,8 +23,8 @@ unsigned long premillis_rssi = 0;
 unsigned long premillis_rx = 0;
 
 int status = WL_IDLE_STATUS;
-char ssid[] = "AsusDevel";      //  your network SSID (name)
-char pass[] = "asusDevel2017";  // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "wifiplane";      //  your network SSID (name)
+char pass[] = "wifiplane1234";  // your network password (use for WPA, or use as key for WEP)
 int keyIndex = 0;               // your network key Index number (needed only for WEP)
 IPAddress remotIp;
 unsigned int localPort = 6000;                  // local port to listen on
