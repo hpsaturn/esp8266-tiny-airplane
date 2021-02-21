@@ -1,6 +1,6 @@
 # esp8266-tiny-airplane
 
-A tiny Airplane with a esp8266 TTGO T-Thruster board joined to a Android joystick app or M5StickC joystick.
+A tiny Airplane with a [esp8266 TTGO T-Thruster board](https://www.aliexpress.com/item/32886527246.html) joined to a Android joystick app or M5StickC joystick.
 
 ## TODO
 
